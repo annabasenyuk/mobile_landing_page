@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  font-family: "SFUIDisplay", sans-serif;
+  color: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+}
+
+h1,
+h1,
+h2,
+h3,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.page-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main::before {
+  content: "";
+  background-image: url("../images/background-people-run.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 50%;
+}
+.main__icon-menu {
+  width: 16px;
+  height: 12px;
+  top: 0;
+  left: 0;
+  margin: 15px;
+  position: absolute;
+}
+.main__header {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0 25px 10px 50px;
+  position: relative;
+}
+.main__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 80%;
+  margin: 0 35px 0 50px;
+  position: relative;
+}
+.main__icon-arrow {
+  width: 14px;
+  height: 7.5px;
+  margin-bottom: 25px;
+  gap: 0px;
+  bottom: 0;
+  position: absolute;
+  opacity: 80%;
+}
+
+.watch-offline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.watch-offline__header {
+  margin: 80px 0 15px 50px;
+  max-width: 240px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.watch-offline__title {
+  margin: 0 50px;
+  max-width: 250px;
+  opacity: 80%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.watch-offline__container {
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.watch-offline__img {
+  width: 300px;
+}
+
+.subscription {
+  border: 8px solid #23C3B2;
+  padding-left: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.subscription::before {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url("../images/group-of-cards-with-channels.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 80%;
+}
+.subscription__container {
+  margin: 28px 0 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.subscription__container-type {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+.subscription__container-plan {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+  letter-spacing: 1px;
+}
+.subscription__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  position: relative;
+}
+.subscription__content-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42.96px;
+  margin: 0 37px 10px 0;
+}
+.subscription__content-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.5px;
+  margin-right: 58px;
+}
+.subscription__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 62px;
+  position: relative;
+}
+.subscription__info-price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.subscription__info-button {
+  width: 200px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #23C3B2;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13.13px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.subscription__info-details {
+  width: 157px;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  letter-spacing: 0.83px;
+  opacity: 60%;
+  margin-bottom: 20px;
+}
+.subscription__info-more {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13.13px;
+  letter-spacing: 1.3px;
+  color: #E5E5E5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.gifts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gifts__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 16px 15px 50px;
+}
+.gifts__description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 80%;
+  margin: 0 35px 9px 50px;
+}
+.gifts__container {
+  max-width: 375px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.gifts__container::before {
+  content: "";
+  background: linear-gradient(179.79deg, rgba(16, 16, 16, 0) 37.5%, #101010 90.39%);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.gifts__img {
+  width: 342px;
+}
+
+.benefits {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.benefits__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+  margin: 0 20px 30px 0;
+}
+.benefits__container {
+  margin: 0 36px 52px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.benefits__button {
+  width: 200px;
+  height: 55px;
+  top: 3052px;
+  left: 50px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background-color: #23C3B2;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.51px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container__block {
+  width: 126px;
+}
+.container__block-bonus {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.87px;
+  text-align: left;
+}
+.container__block-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.9px;
+}
+
+.width {
+  width: 136px;
+}
+/*# sourceMappingURL=index.css.map */
