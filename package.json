@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "dev": "gulp sync"
+    "dev": "gulp sync",
+    "deploy": "gulp build && gh-pages -d build"
   },
   "keywords": [],
   "author": "",

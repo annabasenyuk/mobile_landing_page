@@ -5,7 +5,8 @@
 // https://github.com/postcss/autoprefixer#gulp
 // https://github.com/scniro/gulp-clean-css
 
-const { src, dest, watch, series, parallel } = require('gulp')
+const { src, dest, watch, series, parallel, task } = require('gulp')
+const ghPages = require('gulp-gh-pages');
 const sass = require('gulp-sass')(require('sass'))
 const browserSync = require('browser-sync').create()
 const sourcemaps = require('gulp-sourcemaps')
@@ -13,6 +14,8 @@ const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const cleanCss = require('gulp-clean-css')
 const htmlmin = require('gulp-htmlmin')
+
+task('deploy', () => src('./dist/**/*').pipe(ghPages()));
 
 const paths = {
 	baseDir: './src', // base directory for application
