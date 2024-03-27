@@ -1,6 +1,6 @@
 # mobile_landing_page
 
-[DEMO LINK]()
+[DEMO LINK](https://annabasenyuk.github.io/mobile_landing_page/)
 
 This project is a mobile landing page designed to promote a subscription service for TV and movie content. It features several sections showcasing the benefits of the service.
 

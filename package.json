@@ -2,12 +2,13 @@
   "name": "mobile_landing_page",
   "version": "1.0.0",
   "description": "Mobile landing page",
+  "homepage": "https://annabasenyuk.github.io/mobile_landing_page/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "dev": "gulp sync",
-    "deploy": "gulp build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
@@ -25,6 +27,7 @@
     "sass": "^1.62.1"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "swiper": "^11.0.7"
   }
 }
