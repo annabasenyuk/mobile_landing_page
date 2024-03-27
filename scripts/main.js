@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       watchOverflow: true,
       init: false,
-      allowTouchMove: false,
+      allowTouchMove: true,
     });
     pageSlider.init();
   } else {
